@@ -3,10 +3,9 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.InetAddress;
 import java.net.Socket;
-import java.net.UnknownHostException;
 import java.util.Scanner;
 
-public class ClientSideTCPWeather {
+public class radiusClient {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
         InetAddress host = InetAddress.getLocalHost();
         Socket socket;

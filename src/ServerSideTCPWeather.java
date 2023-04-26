@@ -30,12 +30,12 @@ public class ServerSideTCPWeather {
             if(message.equals("exit") || message.equals("Exit")){
                 break;
             } else if(!message.equals("date")){
-                output.writeObject("There has been an error in understanding your message");
+                output.writeObject("Unrecognised Message");
             }
 
             if(message.equals("date")){
                 String localDate = String.valueOf(LocalDate.now());
-                output.writeObject("The date is " + localDate);
+                output.writeObject("Server Message " + localDate);
             }
 
 
